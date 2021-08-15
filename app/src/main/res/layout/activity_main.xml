@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
+    android:background="@color/background"
     xmlns:custom="http://schemas.android.com/tools"
     tools:context=".Activity.MainActivity">
 
@@ -115,10 +115,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/bg_rounded_ractangle_10"
+        android:background="#ffffff"
         android:padding="@dimen/_10sdp"
-        android:elevation="@dimen/_2sdp"
-        android:layout_margin="@dimen/_10sdp"
         app:bnc_mode="inside">
 
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
-    android:background="@color/bg">
+    android:background="@color/background">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -134,6 +134,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/share"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"

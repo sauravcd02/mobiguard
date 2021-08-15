@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:background="@color/bg">
+    android:background="@color/background">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -165,7 +165,6 @@
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="@dimen/_10sdp">
@@ -189,6 +188,50 @@
                         android:layout_height="wrap_content"
                         android:text="View photos taken due to incorrect passwords" />
 
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:alpha=".5"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ownerinfo"
+                style="@style/ShadowBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BodyNormalDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Owner Information" />
+
+                    <TextView
+                        style="@style/ExtraSmallNormalLite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lost mode user information" />
 
                 </LinearLayout>
                 <ImageView

@@ -17,5 +17,11 @@ public class ViewPhotos extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        binding.toolbarBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

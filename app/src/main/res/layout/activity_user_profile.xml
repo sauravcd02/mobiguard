@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
+    android:background="@color/background"
     android:focusableInTouchMode="true"
     tools:context=".Activity.UserProfile">
 
@@ -407,7 +407,6 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
@@ -498,6 +497,30 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/logout"
+                style="@style/ShadowBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:backgroundTint="@color/red"
+                android:padding="@dimen/_10sdp">
+                <TextView
+                    style="@style/BodyBoldDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="Logout" />
+
 
             </LinearLayout>
 

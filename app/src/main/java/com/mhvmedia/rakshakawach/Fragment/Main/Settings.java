@@ -12,6 +12,7 @@ import android.view.Window;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.mhvmedia.rakshakawach.Activity.OwnerInformation;
 import com.mhvmedia.rakshakawach.Activity.UserProfile;
 import com.mhvmedia.rakshakawach.Activity.ViewPhotos;
 import com.mhvmedia.rakshakawach.databinding.FragmentSettingsBinding;
@@ -42,6 +43,14 @@ public class Settings extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), ViewPhotos.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.ownerinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), OwnerInformation.class);
                 startActivity(intent);
             }
         });
