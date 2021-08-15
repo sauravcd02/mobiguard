@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:layout_marginTop="@dimen/_80sdp"
+          android:layout_centerHorizontal="true">
+          <ImageView
+              android:id="@+id/image"
+              android:layout_width="@dimen/_100sdp"
+              android:layout_height="@dimen/_100sdp"
+              android:adjustViewBounds="true"
+              android:src="@drawable/img_logo" />
+
+          <TextView
+              android:id="@+id/heading"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Lore Ipsum Dolor Sit Amet"
+              android:textColor="@color/text3"
+              android:fontFamily="@font/p_bold"
+              android:textSize="@dimen/Text_large"
+              android:layout_centerHorizontal="true"
+              android:textStyle="bold"
+              android:layout_marginLeft="@dimen/_20sdp"
+              android:layout_marginRight="@dimen/_20sdp"
+              android:layout_marginTop="@dimen/_55sdp"/>
+
+          <TextView
+              android:id="@+id/body"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae urna eget massa molestie tempor at vitae dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae urna eget massa molestie tempor at vitae dolor."
+              android:textColor="@color/text4"
+              android:fontFamily="@font/p_regular"
+              android:layout_below="@+id/heading"
+              android:layout_centerHorizontal="true"
+              android:textSize="@dimen/Text_small"
+              android:gravity="center"
+              android:layout_marginLeft="@dimen/_30sdp"
+              android:lineSpacingExtra="@dimen/_2sdp"
+              android:layout_marginRight="@dimen/_30sdp"
+              android:layout_marginTop="@dimen/_25sdp" />
+      </LinearLayout>
+
+</RelativeLayout>

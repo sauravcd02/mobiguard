@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_ractangle_10"
+    android:backgroundTint="@color/bg"
+    android:padding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/unplugalerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/l3"
+                    android:padding="@dimen/_15sdp"
+                    android:src="@drawable/ic_admin"
+                    android:tint="@color/d3" />
+
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/BodyBoldDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Why you turn on Unplug Alarm alert?"
+                android:textColor="@color/text2" />
+
+            <TextView
+                style="@style/SmallNormalNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat rhoncus lacinia. Duis vitae suscipit lorem. Aenean lacinia mattis faucibus. Fusce a pulvinar dui. Pellentesque a lorem consequat, placerat erat et, egestas lorem. Fusce ornare pulvinar erat, ac sagittis lacus gravida sed. Phasellus mauris nisi, auctor et fringilla vel, ornare vitae leo. Curabitur sollicitudin mollis nisl, nec tempor sapien laoreet quis. Sed eu erat leo."
+                android:textColor="@color/text2" />
+
+
+            <LinearLayout
+                android:id="@+id/close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_gradient_rounded_ractangle_10"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    style="@style/LargeDarkBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Close"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

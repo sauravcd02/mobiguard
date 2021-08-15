@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_ractangle_10"
+    android:backgroundTint="@color/bg"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BodyBoldDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Data Backup" />
+
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:fontFamily="@font/p_bold"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="x"
+                android:textColor="@color/red"
+                android:textSize="@dimen/Text_large"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <RadioButton
+                style="@style/BodyNormalDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I want to backup my data online." />
+
+            <RadioButton
+                style="@style/BodyNormalDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I want to backup my data offline." />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/verify"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                style="@style/LargeDarkBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Backup"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

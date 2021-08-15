@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Andy671:Dachshund-Tab-Layout:v0.3.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a818034274419e6d91f551dc43229fda/jetified-Dachshund-Tab-Layout-v0.3.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a818034274419e6d91f551dc43229fda/jetified-Dachshund-Tab-Layout-v0.3.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a818034274419e6d91f551dc43229fda/jetified-Dachshund-Tab-Layout-v0.3.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Andy671/Dachshund-Tab-Layout/v0.3.3/fc15d8a76594e5df1ee9c51f3557f87500fb6e41/Dachshund-Tab-Layout-v0.3.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

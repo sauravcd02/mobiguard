@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/toolbar"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <com.kekstudio.dachshundtablayout.DachshundTabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="0dp"
+                    app:ddAnimatedIndicator="lineMove"
+                    app:ddIndicatorColor="@color/red"
+                    app:ddIndicatorHeight="4dp"
+                    app:tabGravity="fill"
+                    app:tabSelectedTextColor="@color/text1"
+                    app:tabTextColor="@color/text4"
+                    app:theme="@style/BottomNavigationViewTextStyle" />
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab"
+                android:layout_marginBottom="@dimen/_5sdp" />
+
+        </LinearLayout>
+</RelativeLayout>

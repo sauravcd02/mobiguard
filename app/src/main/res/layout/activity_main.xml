@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    xmlns:custom="http://schemas.android.com/tools"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:elevation="@dimen/_2sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_32sdp"
+                android:adjustViewBounds="true"
+                android:alpha="1"
+                android:src="@drawable/img_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/LargeDarkBold"
+                android:text="@string/app_name"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_7sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/bg_gradient_rounded_ractangle_10"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.github.lzyzsd.circleprogress.ArcProgress
+                    android:id="@+id/donut_progress"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    app:donut_finished_stroke_width="@dimen/_6sdp"
+                    app:donut_unfinished_stroke_width="@dimen/_3sdp"
+                    app:arc_unfinished_color="#CFCFCF"
+                    app:arc_suffix_text_size="@dimen/_12sdp"
+                    app:arc_finished_color="@color/colorAccent"
+                    app:arc_text_color="#00ffffff"
+                    app:arc_text_size="@dimen/_12sdp"
+                    app:arc_progress="75"
+                    app:arc_max="100"
+                    custom:donut_progress="50" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/BodyBoldDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="75%"
+                        android:textColor="#ffffff"/>
+
+                    <TextView
+                        style="@style/BodyNormalDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:text=" Protected" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_user"
+                android:padding="@dimen/_2sdp"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="@dimen/_1sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/bubbleNavigationLinearView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_rounded_ractangle_10"
+        android:padding="@dimen/_10sdp"
+        android:elevation="@dimen/_2sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:bnc_mode="inside">
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            app:bt_active="false"
+            app:bt_colorActive="#ffffff"
+            app:bt_colorInactive="@color/text5"
+            app:bt_duration="600"
+            app:bt_icon="@drawable/ic_home"
+            app:bt_iconHeight="@dimen/_14sdp"
+            app:bt_iconWidth="@dimen/_14sdp"
+            app:bt_shape="@drawable/bg_bottombar_content"
+            app:bt_title="Home"
+            app:bt_titleSize="@dimen/_12ssp"
+            app:theme="@style/BottomNavigationViewTextStyle" />
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            app:bt_active="false"
+            app:bt_colorActive="#ffffff"
+            app:bt_colorInactive="@color/text5"
+            app:bt_duration="600"
+            app:bt_icon="@drawable/ic_controller"
+            app:bt_iconHeight="@dimen/_14sdp"
+            app:bt_iconWidth="@dimen/_14sdp"
+            app:bt_shape="@drawable/bg_bottombar_content"
+            app:bt_title="Controller"
+            app:bt_titleSize="@dimen/_12ssp"
+            app:theme="@style/BottomNavigationViewTextStyle" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            app:bt_active="false"
+            app:bt_colorActive="#ffffff"
+            app:bt_colorInactive="@color/text5"
+            app:bt_duration="600"
+            app:bt_icon="@drawable/ic_settings"
+            app:bt_iconHeight="@dimen/_14sdp"
+            app:bt_iconWidth="@dimen/_14sdp"
+            app:bt_shape="@drawable/bg_bottombar_content"
+            app:bt_title="Settings"
+            app:bt_titleSize="@dimen/_12ssp"
+            app:theme="@style/BottomNavigationViewTextStyle" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            app:bt_active="false"
+            app:bt_colorActive="#ffffff"
+            app:bt_colorInactive="@color/text5"
+            app:bt_duration="600"
+            app:bt_icon="@drawable/ic_information"
+            app:bt_iconHeight="@dimen/_14sdp"
+            app:bt_iconWidth="@dimen/_14sdp"
+            app:bt_shape="@drawable/bg_bottombar_content"
+            app:bt_title="Information"
+            app:bt_titleSize="@dimen/_12ssp"
+            app:theme="@style/BottomNavigationViewTextStyle" />
+
+        <!-- Add more child items here - max upto 5 -->
+
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bubbleNavigationLinearView"
+        android:layout_below="@+id/toolbar" />
+
+</RelativeLayout>

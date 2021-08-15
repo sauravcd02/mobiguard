@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#5F5F5F</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyle">
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/p_bold</item>
+    </style>
+
+    <!-- EditText style. -->
+    <style name="FormData">
+        <item name="android:fontFamily">@font/p_regular</item>
+        <item name="android:textSize">@dimen/Text_moderate</item>
+        <item name="android:textColor">@color/text2</item>
+        <item name="android:textColorHint">@color/text2</item>
+    </style>
+
+    <!-- Text style. -->
+    <style name="ExtraLargeDarkBold">
+        <item name="android:fontFamily">@font/p_bold</item>
+        <item name="android:textSize">@dimen/Text_Extra_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text1</item>
+    </style>
+
+    <style name="LargeDarkBold">
+        <item name="android:fontFamily">@font/p_bold</item>
+        <item name="android:textSize">@dimen/Text_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text2</item>
+    </style>
+
+    <style name="BodyNormalLite">
+        <item name="android:fontFamily">@font/p_regular</item>
+        <item name="android:textSize">@dimen/Text_moderate</item>
+        <item name="android:textColor">@color/text4</item>
+    </style>
+
+    <style name="BodyNormalDark">
+        <item name="android:fontFamily">@font/p_regular</item>
+        <item name="android:textSize">@dimen/Text_moderate</item>
+        <item name="android:textColor">@color/text1</item>
+    </style>
+
+    <style name="BodyBoldDark">
+        <item name="android:fontFamily">@font/p_bold</item>
+        <item name="android:textSize">@dimen/Text_moderate</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text2</item>
+    </style>
+
+    <style name="SmallNormalNormal">
+        <item name="android:fontFamily">@font/p_regular</item>
+        <item name="android:textSize">@dimen/Text_small</item>
+        <item name="android:textColor">@color/text2</item>
+    </style>
+    <style name="SmallsemiboldNormal">
+        <item name="android:fontFamily">@font/p_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/Text_small</item>
+        <item name="android:textColor">@color/text2</item>
+    </style>
+
+    <style name="ExtraSmallNormalLite">
+        <item name="android:fontFamily">@font/p_regular</item>
+        <item name="android:textSize">@dimen/Text_very_small</item>
+        <item name="android:textColor">@color/text6</item>
+    </style>
+    <style name="ExtraSmallNormalDark">
+        <item name="android:fontFamily">@font/p_regular</item>
+        <item name="android:textSize">@dimen/Text_very_small</item>
+        <item name="android:textColor">@color/text2</item>
+    </style>
+    <!-- Box style. -->
+    <style name="ShadowBox">
+        <item name="android:background">@drawable/bg_rounded_ractangle_10</item>
+        <item name="android:elevation">@dimen/_1sdp</item>
+    </style>
+    <style name="ShadowCircle">
+        <item name="android:background">@drawable/bg_gradient_circle</item>
+        <item name="android:elevation">@dimen/_1sdp</item>
+    </style>
+
+    <style name="PrimaryButton">
+        <item name="android:background">@drawable/bg_gradient_rounded_ractangle_10</item>
+        <item name="android:elevation">@dimen/_2sdp</item>
+    </style>
+
+</resources>
